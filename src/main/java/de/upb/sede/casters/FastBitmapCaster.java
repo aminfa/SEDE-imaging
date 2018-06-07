@@ -37,7 +37,7 @@ public class FastBitmapCaster {
 	/**
 	 * Casts a FastBitMap object to the semantic representation 'Arr' which is a list of numbers and writes the data into the provided stream.
 	 */
-	public void cts_NummerList_Arr(OutputStream os, FastBitmap fb) throws IOException {
+	public void cts_FastBitmap_Arr(OutputStream os, FastBitmap fb) throws IOException {
 		JSONArray arr = new JSONArray();
 		int[][][] image = fb.toMatrixRGBAsInt();
 		arr.add(new Double(fb.getWidth()));
